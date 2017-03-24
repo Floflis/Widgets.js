@@ -1,0 +1,56 @@
+body {font-family:Roboto;background: url(https://screensos.github.io/Screens/System/Resources/Themes/Default/Backgrounds/Launcher/Default.png) no-repeat center center fixed;background-size:cover}
+
+.widget {
+    width: 125px;
+    height: 125px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #222;
+    color: white;
+    position:absolute; /* important (all position that's not `static`) */
+}
+
+.draggable-element {
+  cursor:move;
+}
+
+.widget header {
+    width: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #222;
+    position: absolute;
+    top: -1px;
+    right: -28px;
+}
+
+.widget header .button {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: default;
+}
+
+.widget header .button:hover {
+    background-color: #FFD700;
+    color: #454545;
+}
+
+.widget header .button:active {
+    filter: opacity(0.5);
+}
+
+.widget header .button.close:hover {
+    background: red!important;
+    color: #fff!important;
+}
+
+.widget header .button.last {
+    background-image: url(drag.png);
+    filter: opacity(0.5);
+    border-bottom: none;
+    cursor: move;
+}
+
+.widget header .button.last:active {
+    filter:opacity(1)
+}
